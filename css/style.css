@@ -864,3 +864,181 @@ body:after {
     color: #888888; }
     .footer a:hover {
       color: #000; }
+
+/* New Professional Styles */
+
+/* Skill Tags */
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-badge, .tech-badge {
+  display: inline-block;
+  background: #207561;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.skill-badge:hover, .tech-badge:hover {
+  background: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tech-badge-sm {
+  display: inline-block;
+  background: #207561;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.tech-stack {
+  margin-top: 15px;
+}
+
+/* Education Items */
+.education-item {
+  padding: 20px;
+  border-left: 4px solid #207561;
+  background: #f9f9f9;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.education-item:hover {
+  box-shadow: 0 4px 12px rgba(32, 117, 97, 0.1);
+}
+
+.education-item h4 {
+  color: #207561;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+/* Experience Cards */
+.experience-card {
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-color: #207561;
+  transform: translateY(-4px);
+}
+
+.experience-card h5 {
+  color: #207561;
+  font-size: 1.05rem;
+}
+
+/* Button Styles */
+.btn-secondary {
+  background: #555;
+  border-color: #555;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background: #333;
+  border-color: #333;
+  color: #fff;
+}
+
+.btn-sm {
+  padding: 6px 15px !important;
+  font-size: 0.85rem;
+}
+
+/* Portfolio Improvements */
+.item-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: all 0.4s ease;
+}
+
+.item-wrap:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.service-about {
+  position: relative;
+  padding: 20px;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+/* Enhanced Section Styling */
+#skills-section {
+  margin: 40px 0;
+}
+
+#skills-section h4 {
+  color: #207561;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Footer Enhancements */
+.footer.bg-dark {
+  background: #1a1a1a !important;
+}
+
+.footer .social-circle {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background: #207561;
+  color: white;
+  text-align: center;
+  line-height: 44px;
+  border-radius: 50%;
+  margin-right: 12px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.footer .social-circle:hover {
+  background: #fff;
+  color: #207561;
+  transform: translateY(-4px);
+}
+
+.footer hr {
+  opacity: 0.3;
+}
+
+/* Responsive Improvements */
+@media (max-width: 768px) {
+  .skill-badge, .tech-badge {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+  }
+  
+  .education-item {
+    margin-bottom: 20px;
+  }
+  
+  .experience-card {
+    margin-bottom: 20px;
+  }
+}
