@@ -1320,7 +1320,7 @@ body:after {
 /* Portfolio Cards - Modern Design */
 .portfolio-section {
   background: white;
-  padding: 80px 0 120px 0;
+  padding: 80px 0 100px 0;
   margin-bottom: 80px;
   position: relative;
   z-index: 1;
@@ -1482,11 +1482,10 @@ body:after {
 /* Education Section */
 .education-section {
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-  padding: 100px 0 80px 0;
-  margin-top: 0;
-  margin-bottom: 60px;
+  padding: 80px 0;
+  margin-bottom: 80px;
   position: relative;
-  z-index: 10;
+  z-index: 1;
   clear: both;
   display: block;
 }
@@ -2086,11 +2085,10 @@ textarea.form-control {
 /* Education Section */
 .education-section {
   background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-  padding: 100px 0 80px 0;
-  margin-top: 0;
+  padding: 80px 0;
   margin-bottom: 80px;
   position: relative;
-  z-index: 10;
+  z-index: 1;
   clear: both;
   display: block;
 }
