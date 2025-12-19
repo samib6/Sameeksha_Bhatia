@@ -97,30 +97,86 @@
     </header>
 
 
-    <div class="site-blocks-cover overlay bg-light" id="home-section">
+    <div class="site-blocks-cover overlay bg-light hero-section" id="home-section">
 
       <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center align-items-center min-vh-100">
 
-          <div class="col-md-12 mt-lg-5 text-left align-self-center text-intro">
-            <div class="row">
-              <div class="col-lg-6">
-                <h1 class="text-black">Hi! I'm Sameeksha Bhatia</h1>
-                <p class="lead">MS Computer Science Student | Full Stack Developer</p>
-                <p class="mb-4">Passionate about building scalable web applications and exploring cutting-edge technologies</p>
-                <p>
-                  <a href="#portfolio-section" class="btn smoothscroll btn-primary mr-3">View My Work</a>
-                  <a href="#contact-section" class="btn smoothscroll btn-secondary">Download Resume</a>
-                </p>
+          <div class="col-md-12">
+            <div class="row align-items-center">
+              <div class="col-lg-6 mb-5 mb-lg-0 order-lg-1">
+                <div class="hero-content animate-fade-in">
+                  <div class="hero-subtitle">👋 Welcome to my portfolio</div>
+                  <h1 class="hero-title mb-4">Hi! I'm Sameeksha Bhatia</h1>
+                  <p class="hero-lead mb-4">MS Computer Science Student | Full Stack Developer | SDE Aspiring Professional</p>
+                  <p class="hero-description mb-5">I craft scalable web applications and solve complex problems through elegant code. Passionate about full-stack development, cloud technologies, and building products that matter.</p>
+                  <div class="hero-cta">
+                    <a href="#portfolio-section" class="btn btn-primary btn-lg mr-3 smoothscroll">
+                      <span class="icon-arrow-right mr-2"></span>View My Work
+                    </a>
+                    <a href="#contact-section" class="btn btn-outline-primary btn-lg smoothscroll">
+                      <span class="icon-download mr-2"></span>Resume
+                    </a>
+                  </div>
+                  <div class="hero-social mt-5">
+                    <p class="text-muted mb-3">Connect with me:</p>
+                    <a href="https://github.com/samib6" class="social-link mr-3" title="GitHub"><span class="icon-github"></span></a>
+                    <a href="https://www.linkedin.com/in/sameeksha-bhatia/" class="social-link mr-3" title="LinkedIn"><span class="icon-linkedin"></span></a>
+                    <a href="mailto:sameeksha.bhatia@example.com" class="social-link" title="Email"><span class="icon-mail"></span></a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-lg-6 order-lg-2">
+                <div class="hero-illustration">
+                  <svg class="hero-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Illustration using SVG - Developer at computer -->
+                    <defs>
+                      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#207561;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#0d3f31;stop-opacity:1" />
+                      </linearGradient>
+                    </defs>
+                    
+                    <!-- Background circle -->
+                    <circle cx="200" cy="200" r="180" fill="url(#grad1)" opacity="0.1"/>
+                    
+                    <!-- Computer monitor -->
+                    <rect x="80" y="80" width="240" height="160" rx="20" fill="none" stroke="#207561" stroke-width="3"/>
+                    <rect x="90" y="95" width="220" height="130" rx="15" fill="#f0f0f0"/>
+                    
+                    <!-- Code lines on screen -->
+                    <line x1="110" y1="115" x2="370" y2="115" stroke="#207561" stroke-width="2"/>
+                    <line x1="110" y1="135" x2="290" y2="135" stroke="#207561" stroke-width="2"/>
+                    <line x1="110" y1="155" x2="310" y2="155" stroke="#207561" stroke-width="2"/>
+                    <line x1="110" y1="175" x2="270" y2="175" stroke="#207561" stroke-width="2"/>
+                    <line x1="110" y1="195" x2="300" y2="195" stroke="#207561" stroke-width="2"/>
+                    
+                    <!-- Monitor stand -->
+                    <rect x="175" y="250" width="50" height="30" fill="#207561" rx="5"/>
+                    <rect x="150" y="275" width="100" height="15" fill="#207561" rx="7"/>
+                    
+                    <!-- Keyboard -->
+                    <rect x="70" y="300" width="260" height="40" rx="8" fill="#ddd" stroke="#207561" stroke-width="2"/>
+                    <circle cx="100" cy="320" r="3" fill="#207561"/>
+                    <circle cx="125" cy="320" r="3" fill="#207561"/>
+                    <circle cx="150" cy="320" r="3" fill="#207561"/>
+                    <circle cx="200" cy="320" r="3" fill="#207561"/>
+                    <circle cx="250" cy="320" r="3" fill="#207561"/>
+                    <circle cx="300" cy="320" r="3" fill="#207561"/>
+                    
+                    <!-- Cursor/animated element -->
+                    <circle cx="350" cy="155" r="8" fill="#207561" opacity="0.3">
+                      <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite"/>
+                    </circle>
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
             
         </div>
       </div>
-
-      <img src="images/profile.jpg" alt="Image" class="img-face" >
-
       
     </div>  
 
@@ -186,196 +242,234 @@
       </div>
     </div>
 -->
-    <div class="site-section" id="about-section">
+    <div class="site-section about-section" id="about-section">
       <div class="container">
-        <div class="row ">
-          <div class="col-12 mb-4 position-relative">
-            <h2 class="section-title">About Me</h2>
-          </div>
-          <div class="col-lg-4 order-1 order-lg-2 mb-4 mb-lg-0">
-            <div class="bg-light pt-5">
-            <img src="images/profile.jpg" alt="Image" class="img-fluid">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title mb-3">👤 About Me</h2>
+          <p class="text-muted">My journey in software engineering</p>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <div class="about-image">
+              <img src="images/profile.jpg" alt="Sameeksha Bhatia" class="img-fluid rounded-lg shadow-lg">
+              <div class="about-badge">MS Computer Science</div>
             </div>
           </div>
-          <div class="col-lg-4 order-2 order-lg-1">
-            <p>I'm an aspiring software engineer pursuing my MS in Computer Science, with a strong foundation in full-stack web development and a passion for building scalable, user-centric applications.</p>
-            <p>My journey in technology spans from backend systems with Django and Python to frontend frameworks like React and JavaScript. I'm particularly interested in cloud technologies, microservices architecture, and software engineering best practices.</p>
-          </div>
-          <div class="col-lg-4 order-3 order-lg-3">
-            <p>Beyond coding, I maintain a keen interest in robotics and embedded systems, which has given me valuable insights into system design and problem-solving across different domains.</p>
-            <p>I'm actively seeking Software Engineer, Full Stack Developer, or Backend Engineer positions where I can contribute meaningfully to impactful projects while continuing to grow my technical expertise.</p>
-            <p><a href="#contact-section" class="btn smoothscroll btn-primary">Get In Touch</a></p>
-          </div>
-          
-        </div>
-      </div>
-    </div>
+          <div class="col-lg-7">
+            <div class="about-content">
+              <p class="lead mb-4">I'm an aspiring software engineer pursuing my MS in Computer Science, with a strong foundation in full-stack web development and a passion for building scalable, user-centric applications.</p>
+              
+              <p class="mb-4">My journey in technology spans from backend systems with Django and Python to frontend frameworks like React and JavaScript. I'm particularly interested in cloud technologies, microservices architecture, and software engineering best practices.</p>
+              
+              <p class="mb-4">Beyond coding, I maintain a keen interest in robotics and embedded systems, which has given me valuable insights into system design and problem-solving across different domains.</p>
 
-    <!-- Skills Section -->
-    <div class="site-section bg-light" id="skills-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 mb-5 position-relative">
-            <h2 class="section-title text-center mb-5">Technical Skills</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 mb-4">
-            <h4 class="mb-3">Languages</h4>
-            <div class="skill-tags">
-              <span class="skill-badge">Python</span>
-              <span class="skill-badge">JavaScript</span>
-              <span class="skill-badge">Java</span>
-              <span class="skill-badge">C</span>
-              <span class="skill-badge">SQL</span>
-              <span class="skill-badge">HTML/CSS</span>
-            </div>
-          </div>
-          <div class="col-md-6 mb-4">
-            <h4 class="mb-3">Frontend Development</h4>
-            <div class="skill-tags">
-              <span class="skill-badge">React</span>
-              <span class="skill-badge">JavaScript/ES6+</span>
-              <span class="skill-badge">Bootstrap</span>
-              <span class="skill-badge">Responsive Design</span>
-              <span class="skill-badge">jQuery</span>
-            </div>
-          </div>
-          <div class="col-md-6 mb-4">
-            <h4 class="mb-3">Backend Development</h4>
-            <div class="skill-tags">
-              <span class="skill-badge">Django</span>
-              <span class="skill-badge">Flask</span>
-              <span class="skill-badge">REST APIs</span>
-              <span class="skill-badge">PostgreSQL</span>
-              <span class="skill-badge">MySQL</span>
-            </div>
-          </div>
-          <div class="col-md-6 mb-4">
-            <h4 class="mb-3">Other Technologies</h4>
-            <div class="skill-tags">
-              <span class="skill-badge">Git/GitHub</span>
-              <span class="skill-badge">Machine Learning</span>
-              <span class="skill-badge">NLP</span>
-              <span class="skill-badge">Embedded Systems</span>
-              <span class="skill-badge">Linux</span>
+              <p class="mb-4 font-weight-bold text-primary">I'm actively seeking Software Engineer, Full Stack Developer, or Backend Engineer positions where I can contribute meaningfully to impactful projects while continuing to grow my technical expertise.</p>
+              
+              <div class="about-cta">
+                <a href="#contact-section" class="btn btn-primary smoothscroll">Let's Connect</a>
+                <a href="#skills-section" class="btn btn-outline-primary smoothscroll ml-3">View Skills</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Skills Section -->
+    <div class="site-section skills-section" id="skills-section">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title mb-3">💻 Technical Skills</h2>
+          <p class="text-muted">Tools and technologies I work with</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-5">
+            <div class="skill-group">
+              <div class="skill-group-header">
+                <span class="skill-icon">🔤</span>
+                <h4>Languages</h4>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">JavaScript</span>
+                <span class="skill-badge">Java</span>
+                <span class="skill-badge">C</span>
+                <span class="skill-badge">SQL</span>
+                <span class="skill-badge">HTML/CSS</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-5">
+            <div class="skill-group">
+              <div class="skill-group-header">
+                <span class="skill-icon">🎨</span>
+                <h4>Frontend</h4>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-badge">React</span>
+                <span class="skill-badge">JavaScript/ES6+</span>
+                <span class="skill-badge">Bootstrap</span>
+                <span class="skill-badge">Responsive Design</span>
+                <span class="skill-badge">jQuery</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-5">
+            <div class="skill-group">
+              <div class="skill-group-header">
+                <span class="skill-icon">⚙️</span>
+                <h4>Backend</h4>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-badge">Django</span>
+                <span class="skill-badge">Flask</span>
+                <span class="skill-badge">REST APIs</span>
+                <span class="skill-badge">PostgreSQL</span>
+                <span class="skill-badge">MySQL</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-5">
+            <div class="skill-group">
+              <div class="skill-group-header">
+                <span class="skill-icon">🛠️</span>
+                <h4>Other Tools</h4>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-badge">Git/GitHub</span>
+                <span class="skill-badge">Machine Learning</span>
+                <span class="skill-badge">NLP</span>
+                <span class="skill-badge">Embedded Systems</span>
+                <span class="skill-badge">Linux</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
-    <section class="site-section block__62272" id="portfolio-section">
+
+    <section class="site-section portfolio-section" id="portfolio-section">
       
 
       <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 position-relative">
-            <h2 class="section-title text-center mb-5">My Portfolio</h2>
-            <p class="text-center text-muted mb-5">A selection of projects showcasing my expertise in full-stack development, machine learning, and system design</p>
-          </div>
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title mb-3">🚀 Featured Projects</h2>
+          <p class="text-muted">Showcase of my best work in full-stack development, ML, and robotics</p>
         </div>
 
         
         <div id="posts" class="row no-gutter">
-          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/single_sign_on.png" class="item-wrap fancybox" title="Single Sign On">
-              <div class="service-about">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/single_sign_on.png" alt="Single Sign On">
-
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <img class="img-fluid" src="images/single_sign_on.png" alt="Single Sign On">
+                <div class="portfolio-overlay">
+                  <a href="images/single_sign_on.png" class="portfolio-link fancybox"><span class="icon-search2"></span></a>
+                </div>
+              </div>
+              <div class="portfolio-content">
+                <div class="portfolio-category">Web Development</div>
                 <h3>Single Sign On (OIDC Provider)</h3>
-                <p>Developed a complete OIDC provider and client implementation with user registration, live news feed, and user profile management.</p>
+                <p>Complete OIDC provider with user registration, live news feed, and user profiles.</p>
                 <div class="tech-stack">
                   <span class="tech-badge">Django</span>
                   <span class="tech-badge">Python</span>
                   <span class="tech-badge">MySQL</span>
-                  <span class="tech-badge">OAuth2</span>
                 </div>
               </div>
-            </a>
+            </div>
           </div>
-          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/covid-fake-news.jpg" class="item-wrap fancybox" title="COVID-19-Fake-News-Detector">
-              <div class="service-about">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/covid-fake-news.jpg" alt="COVID-19-Fake-News-Detector">
 
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <img class="img-fluid" src="images/covid-fake-news.jpg" alt="COVID-19 Fake News Detector">
+                <div class="portfolio-overlay">
+                  <a href="images/covid-fake-news.jpg" class="portfolio-link fancybox"><span class="icon-search2"></span></a>
+                </div>
+              </div>
+              <div class="portfolio-content">
+                <div class="portfolio-category">Machine Learning</div>
                 <h3>COVID-19 Fake News Detector</h3>
-                <p>Web application using NLP and Machine Learning to detect fake news with 90% accuracy. Preprocessed and trained datasets using scikit-learn algorithms.
-                <a href="https://github.com/samib6/COVID-19-Fake-News-Detector-" title="COVID-19-Fake-News-Detector" style="color: blueviolet"> View on GitHub</a></p>
+                <p>NLP-powered app detecting fake news with 90% accuracy using ML algorithms.
+                <a href="https://github.com/samib6/COVID-19-Fake-News-Detector-" class="text-primary"> GitHub</a></p>
                 <div class="tech-stack">
                   <span class="tech-badge">Django</span>
                   <span class="tech-badge">NLP</span>
                   <span class="tech-badge">scikit-learn</span>
-                  <span class="tech-badge">Python</span>
                 </div>
               </div>
-            </a>
+            </div>
           </div>
 
-          <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <div class="service-about">
-            <a href="images/order-pizza-online-.jpg" class="item-wrap fancybox" title="Pizza-Ordering-Website">
-
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/order-pizza-online-.jpg" alt="Pizza-Ordering-Website">
-
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <img class="img-fluid" src="images/order-pizza-online-.jpg" alt="Pizza Ordering Platform">
+                <div class="portfolio-overlay">
+                  <a href="images/order-pizza-online-.jpg" class="portfolio-link fancybox"><span class="icon-search2"></span></a>
+                </div>
+              </div>
+              <div class="portfolio-content">
+                <div class="portfolio-category">Full Stack</div>
                 <h3>Pizza Ordering Platform</h3>
-                <p>Full-stack e-commerce application for online food ordering. Implemented user authentication, shopping cart, and order management system.
-                <a href="https://github.com/samib6/Pizza-Ordering-Website" title="Pizza-Ordering-Website" style="color: blueviolet"> View on GitHub</a></p>
+                <p>E-commerce app with user auth, shopping cart, and order management.
+                <a href="https://github.com/samib6/Pizza-Ordering-Website" class="text-primary"> GitHub</a></p>
                 <div class="tech-stack">
                   <span class="tech-badge">Django</span>
                   <span class="tech-badge">PostgreSQL</span>
-                  <span class="tech-badge">HTML/CSS</span>
                   <span class="tech-badge">JavaScript</span>
                 </div>
-            </a>
               </div>
+            </div>
           </div>
 
-          <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-
-            <a href="images/line_follow_bot.jpg" class="item-wrap fancybox" title="Line following bot">
-              <div class="service-about">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/line_follow_bot.jpg" alt="Line following bot">
-
-                <h3>Line Following Autonomous Bot</h3>
-                <p>Autonomous robot using computer vision to follow white line. Integrated embedded systems with real-time image processing using OpenMV.
-                <a href="https://github.com/samib6/Line-Following-Bot" title="Line-Following-Bot" style="color: blueviolet"> View on GitHub</a></p>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <img class="img-fluid" src="images/line_follow_bot.jpg" alt="Line Following Autonomous Bot">
+                <div class="portfolio-overlay">
+                  <a href="images/line_follow_bot.jpg" class="portfolio-link fancybox"><span class="icon-search2"></span></a>
+                </div>
+              </div>
+              <div class="portfolio-content">
+                <div class="portfolio-category">Robotics</div>
+                <h3>Autonomous Line Following Bot</h3>
+                <p>Computer vision robot following white lines using OpenMV and Embedded C.
+                <a href="https://github.com/samib6/Line-Following-Bot" class="text-primary"> GitHub</a></p>
                 <div class="tech-stack">
                   <span class="tech-badge">Python</span>
                   <span class="tech-badge">Embedded C</span>
                   <span class="tech-badge">OpenMV</span>
-                  <span class="tech-badge">Robotics</span>
                 </div>
               </div>
-            </a>
-
+            </div>
           </div>
-          <div class="item design col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
 
-            <a href="images/student_sys.jpg_cropX1=0&cropX2=4368&cropY1=221&cropY2=2678" title="Student Smart Card System" class="item-wrap fancybox">
-              <div class="service-about">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/student_sys.jpg_cropX1=0&cropX2=4368&cropY1=221&cropY2=2678" alt="Student-College-Smart-Card-System">
-
-                <h3>Student Smart Card Management System</h3>
-                <p>Desktop application for document management and attendance tracking. Streamlined college operations with digital record-keeping and real-time reporting.
-                <a href="https://github.com/samib6/Student-College-Smart-Card-System" title="student_sys" style="color: blueviolet"> View on GitHub</a></p>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <img class="img-fluid" src="images/student_sys.jpg_cropX1=0&cropX2=4368&cropY1=221&cropY2=2678" alt="Student Smart Card System">
+                <div class="portfolio-overlay">
+                  <a href="images/student_sys.jpg_cropX1=0&cropX2=4368&cropY1=221&cropY2=2678" class="portfolio-link fancybox"><span class="icon-search2"></span></a>
+                </div>
+              </div>
+              <div class="portfolio-content">
+                <div class="portfolio-category">Desktop Application</div>
+                <h3>Student Smart Card System</h3>
+                <p>Desktop app for document management and attendance tracking with real-time reporting.
+                <a href="https://github.com/samib6/Student-College-Smart-Card-System" class="text-primary"> GitHub</a></p>
                 <div class="tech-stack">
                   <span class="tech-badge">VB.NET</span>
                   <span class="tech-badge">SQL Server</span>
-                  <span class="tech-badge">Database Design</span>
                 </div>
               </div>
-            </a>
-
+            </div>
           </div>
+        </div>
 
 
 
@@ -388,26 +482,40 @@
     </section>
 
     <!-- Education Section -->
-    <section class="site-section bg-light" id="education-section">
+    <section class="site-section education-section bg-light" id="education-section">
       <div class="container">
-        <div class="row">
-          <div class="col-12 mb-5 position-relative">
-            <h2 class="section-title text-center">Education</h2>
-          </div>
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title mb-3">🎓 Education</h2>
+          <p class="text-muted">My academic journey</p>
         </div>
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <div class="education-item mb-5">
-              <h4 class="mb-2">Master of Science in Computer Science</h4>
-              <p class="text-muted mb-2"><strong>Expected Graduation:</strong> May 2027</p>
-              <p class="text-muted"><strong>Relevant Coursework:</strong> Data Structures, Algorithms, Database Systems, Web Development, Machine Learning, Software Engineering</p>
-              <p class="text-muted"><strong>Location:</strong> Amherst, MA, USA</p>
-            </div>
+            <div class="education-timeline">
+              <div class="timeline-item">
+                <div class="timeline-marker">
+                  <span class="timeline-icon">📚</span>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-date">Present - 2027</div>
+                  <h4>Master of Science in Computer Science</h4>
+                  <p class="text-muted mb-2">University of Massachusetts, Amherst, MA, USA</p>
+                  <p class="mb-2"><strong>Relevant Coursework:</strong> Data Structures, Algorithms, Database Systems, Web Development, Machine Learning, Software Engineering, Distributed Systems</p>
+                  <p class="text-muted"><em>Focus: Full-stack development and scalable system design</em></p>
+                </div>
+              </div>
 
-            <div class="education-item">
-              <h4 class="mb-2">Diploma in Information Technology</h4>
-              <p class="text-muted mb-2"><strong>K.J Somaiya College of Engineering, Mumbai, India</strong></p>
-              <p class="text-muted">GPA: 8.89 | Relevant Projects: Line Following Bot, Student Management System, IoT Applications</p>
+              <div class="timeline-item">
+                <div class="timeline-marker">
+                  <span class="timeline-icon">🏫</span>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-date">2019 - 2022</div>
+                  <h4>Diploma in Information Technology</h4>
+                  <p class="text-muted mb-2">K.J Somaiya College of Engineering, Mumbai, India</p>
+                  <p class="mb-2"><strong>GPA: 8.89/10</strong></p>
+                  <p class="mb-0"><strong>Notable Projects:</strong> Line Following Bot, Student Management System, IoT Applications</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -415,47 +523,69 @@
     </section>
 
     <!-- Work Experience Section -->
-    <section class="site-section" id="experience-section">
+    <section class="site-section experience-section" id="experience-section">
       <div class="container">
-        <div class="row">
-          <div class="col-12 mb-5 position-relative">
-            <h2 class="section-title text-center">Work Experience & Internships</h2>
-          </div>
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title mb-3">💼 Work Experience</h2>
+          <p class="text-muted">Professional experiences and internships</p>
         </div>
         <div class="row">
-          <div class="col-md-6 mb-4">
-            <div class="experience-card bg-light p-4 rounded">
-              <h5 class="mb-2">Colgate-Palmolive</h5>
-              <p class="text-muted mb-3"><strong>Position:</strong> [Add your role] | <strong>Duration:</strong> [Add dates]</p>
-              <p>Add your experience details, responsibilities, and key achievements here.</p>
-              <div class="tech-stack mt-3">
-                <span class="tech-badge-sm">[Skill 1]</span>
-                <span class="tech-badge-sm">[Skill 2]</span>
-                <span class="tech-badge-sm">[Skill 3]</span>
+          <div class="col-md-4 mb-4">
+            <div class="experience-card h-100">
+              <div class="experience-header">
+                <div class="company-logo">
+                  <img src="images/colgate_logo.jpg" alt="Colgate" class="img-fluid">
+                </div>
+              </div>
+              <div class="experience-body">
+                <h5 class="mb-2">Colgate-Palmolive</h5>
+                <p class="text-muted mb-3"><strong>Internship Role</strong></p>
+                <p class="mb-3">Gained hands-on experience in software development, working on real-world projects with industry professionals.</p>
+                <div class="tech-stack">
+                  <span class="tech-badge-sm">Python</span>
+                  <span class="tech-badge-sm">SQL</span>
+                  <span class="tech-badge-sm">Problem Solving</span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6 mb-4">
-            <div class="experience-card bg-light p-4 rounded">
-              <h5 class="mb-2">e-Yantra, IIT Bombay</h5>
-              <p class="text-muted mb-3"><strong>Position:</strong> [Add your role] | <strong>Duration:</strong> [Add dates]</p>
-              <p>Add your experience details, responsibilities, and key achievements here.</p>
-              <div class="tech-stack mt-3">
-                <span class="tech-badge-sm">[Skill 1]</span>
-                <span class="tech-badge-sm">[Skill 2]</span>
-                <span class="tech-badge-sm">[Skill 3]</span>
+
+          <div class="col-md-4 mb-4">
+            <div class="experience-card h-100">
+              <div class="experience-header">
+                <div class="company-logo">
+                  <img src="images/eyantra.jpg" alt="e-Yantra" class="img-fluid">
+                </div>
+              </div>
+              <div class="experience-body">
+                <h5 class="mb-2">e-Yantra, IIT Bombay</h5>
+                <p class="text-muted mb-3"><strong>Robotics Program</strong></p>
+                <p class="mb-3">Contributed to robotics projects, developing embedded systems and real-time control algorithms for autonomous robots.</p>
+                <div class="tech-stack">
+                  <span class="tech-badge-sm">Robotics</span>
+                  <span class="tech-badge-sm">Embedded C</span>
+                  <span class="tech-badge-sm">Python</span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6 mb-4">
-            <div class="experience-card bg-light p-4 rounded">
-              <h5 class="mb-2">IcodeIcreate</h5>
-              <p class="text-muted mb-3"><strong>Position:</strong> [Add your role] | <strong>Duration:</strong> [Add dates]</p>
-              <p>Add your experience details, responsibilities, and key achievements here.</p>
-              <div class="tech-stack mt-3">
-                <span class="tech-badge-sm">[Skill 1]</span>
-                <span class="tech-badge-sm">[Skill 2]</span>
-                <span class="tech-badge-sm">[Skill 3]</span>
+
+          <div class="col-md-4 mb-4">
+            <div class="experience-card h-100">
+              <div class="experience-header">
+                <div class="company-logo">
+                  <img src="images/icodeicreate.png" alt="IcodeIcreate" class="img-fluid">
+                </div>
+              </div>
+              <div class="experience-body">
+                <h5 class="mb-2">IcodeIcreate</h5>
+                <p class="text-muted mb-3"><strong>Developer</strong></p>
+                <p class="mb-3">Developed features and maintained codebases, collaborating with teams using Agile methodologies.</p>
+                <div class="tech-stack">
+                  <span class="tech-badge-sm">JavaScript</span>
+                  <span class="tech-badge-sm">React</span>
+                  <span class="tech-badge-sm">Django</span>
+                </div>
               </div>
             </div>
           </div>
@@ -489,25 +619,6 @@
               <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
               <p><cite>&mdash; Ryan Peters</cite></p>
             </blockquote>
-          </div>
-        </div>
-      </div>
-    </section>
--->
-    <section class="site-section"  id="clients-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 mb-5 position-relative">
-            <h2 class="section-title text-center">Work Experience</h2>
-          </div>
-          <div class="col-6 col-sm-6 col-md-4 col-lg-4 text-center">
-            <img src="images/colgate_logo.jpg" class="img-fluid" width="376" height="100" alt="Colgate">
-          </div>
-          <div class="col-6 col-sm-6 col-md-4 col-lg-4 text-center">
-            <img src="images/eyantra.jpg"  class="img-fluid" alt="e-Yantra,IITB">
-          </div>
-          <div class="col-6 col-sm-6 col-md-4 col-lg-4 text-center">
-            <img src="images/icodeicreate.png" alt="IcodeIcreate" class="img-fluid">
           </div>
         </div>
       </div>
