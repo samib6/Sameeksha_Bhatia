@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#207561">
     
-    <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab|Open+Sans:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -129,46 +129,112 @@
               
               <div class="col-lg-6 order-lg-2">
                 <div class="hero-illustration">
-                  <svg class="hero-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Illustration using SVG - Developer at computer -->
+                  <svg class="hero-svg" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
                     <defs>
-                      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style="stop-color:#207561;stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:#0d3f31;stop-opacity:1" />
+                      <linearGradient id="grad-primary" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
                       </linearGradient>
+                      <linearGradient id="grad-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ec4899;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+                      </linearGradient>
+                      <linearGradient id="grad-light" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#14b8a6;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+                      </linearGradient>
+                      <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+                        <feDropShadow dx="0" dy="10" stdDeviation="8" flood-opacity="0.3"/>
+                      </filter>
+                      <filter id="glow">
+                        <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                        <feMerge>
+                          <feMergeNode in="coloredBlur"/>
+                          <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                      </filter>
                     </defs>
                     
-                    <!-- Background circle -->
-                    <circle cx="200" cy="200" r="180" fill="url(#grad1)" opacity="0.1"/>
+                    <!-- Animated background circles -->
+                    <circle cx="250" cy="250" r="220" fill="url(#grad-primary)" opacity="0.08"/>
+                    <circle cx="250" cy="250" r="180" fill="url(#grad-accent)" opacity="0.05"/>
                     
-                    <!-- Computer monitor -->
-                    <rect x="80" y="80" width="240" height="160" rx="20" fill="none" stroke="#207561" stroke-width="3"/>
-                    <rect x="90" y="95" width="220" height="130" rx="15" fill="#f0f0f0"/>
+                    <!-- Person sitting -->
+                    <!-- Head -->
+                    <circle cx="150" cy="120" r="25" fill="#e6cdbf" filter="url(#shadow)"/>
+                    <!-- Hair -->
+                    <ellipse cx="150" cy="105" rx="28" ry="22" fill="#3d2817"/>
+                    <!-- Ears -->
+                    <circle cx="125" cy="125" r="6" fill="#e6cdbf"/>
                     
-                    <!-- Code lines on screen -->
-                    <line x1="110" y1="115" x2="370" y2="115" stroke="#207561" stroke-width="2"/>
-                    <line x1="110" y1="135" x2="290" y2="135" stroke="#207561" stroke-width="2"/>
-                    <line x1="110" y1="155" x2="310" y2="155" stroke="#207561" stroke-width="2"/>
-                    <line x1="110" y1="175" x2="270" y2="175" stroke="#207561" stroke-width="2"/>
-                    <line x1="110" y1="195" x2="300" y2="195" stroke="#207561" stroke-width="2"/>
+                    <!-- Body -->
+                    <rect x="135" y="150" width="30" height="50" rx="8" fill="url(#grad-primary)" filter="url(#shadow)"/>
+                    <!-- Shirt accent -->
+                    <rect x="135" y="150" width="30" height="15" rx="8" fill="url(#grad-accent)" opacity="0.8"/>
                     
-                    <!-- Monitor stand -->
-                    <rect x="175" y="250" width="50" height="30" fill="#207561" rx="5"/>
-                    <rect x="150" y="275" width="100" height="15" fill="#207561" rx="7"/>
+                    <!-- Arms -->
+                    <rect x="95" y="160" width="40" height="15" rx="7" fill="#e6cdbf" transform="rotate(-25 115 167)"/>
+                    <rect x="165" y="160" width="40" height="15" rx="7" fill="#e6cdbf" transform="rotate(25 185 167)"/>
+                    
+                    <!-- Legs -->
+                    <rect x="130" y="200" width="13" height="45" rx="6" fill="#2d2d2d"/>
+                    <rect x="157" y="200" width="13" height="45" rx="6" fill="#2d2d2d"/>
+                    <!-- Shoes -->
+                    <ellipse cx="136" cy="247" rx="10" ry="8" fill="#1a1a1a"/>
+                    <ellipse cx="163" cy="247" rx="10" ry="8" fill="#1a1a1a"/>
+                    
+                    <!-- Laptop -->
+                    <rect x="220" y="170" width="140" height="85" rx="12" fill="url(#grad-light)" filter="url(#shadow)"/>
+                    <rect x="225" y="175" width="130" height="70" rx="10" fill="#0f172a"/>
+                    
+                    <!-- Screen content - animated lines -->
+                    <g filter="url(#glow)">
+                      <line x1="235" y1="185" x2="310" y2="185" stroke="#6366f1" stroke-width="2" opacity="0.7">
+                        <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+                      </line>
+                      <line x1="235" y1="195" x2="290" y2="195" stroke="#ec4899" stroke-width="2" opacity="0.7">
+                        <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite"/>
+                      </line>
+                      <line x1="235" y1="205" x2="305" y2="205" stroke="#f97316" stroke-width="2" opacity="0.7">
+                        <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+                      </line>
+                      <line x1="235" y1="215" x2="280" y2="215" stroke="#14b8a6" stroke-width="2" opacity="0.7">
+                        <animate attributeName="opacity" values="0.3;1;0.3" dur="2.2s" repeatCount="indefinite"/>
+                      </line>
+                    </g>
                     
                     <!-- Keyboard -->
-                    <rect x="70" y="300" width="260" height="40" rx="8" fill="#ddd" stroke="#207561" stroke-width="2"/>
-                    <circle cx="100" cy="320" r="3" fill="#207561"/>
-                    <circle cx="125" cy="320" r="3" fill="#207561"/>
-                    <circle cx="150" cy="320" r="3" fill="#207561"/>
-                    <circle cx="200" cy="320" r="3" fill="#207561"/>
-                    <circle cx="250" cy="320" r="3" fill="#207561"/>
-                    <circle cx="300" cy="320" r="3" fill="#207561"/>
+                    <rect x="220" y="255" width="140" height="25" rx="8" fill="#1a1a1a" filter="url(#shadow)"/>
+                    <circle cx="245" cy="268" r="2" fill="#6366f1" opacity="0.6"/>
+                    <circle cx="265" cy="268" r="2" fill="#ec4899" opacity="0.6"/>
+                    <circle cx="285" cy="268" r="2" fill="#f97316" opacity="0.6"/>
+                    <circle cx="305" cy="268" r="2" fill="#14b8a6" opacity="0.6"/>
+                    <circle cx="325" cy="268" r="2" fill="#06b6d4" opacity="0.6"/>
                     
-                    <!-- Cursor/animated element -->
-                    <circle cx="350" cy="155" r="8" fill="#207561" opacity="0.3">
-                      <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite"/>
-                    </circle>
+                    <!-- Mouse -->
+                    <ellipse cx="370" cy="275" rx="12" ry="18" fill="#3d3d3d" filter="url(#shadow)"/>
+                    
+                    <!-- Coffee cup -->
+                    <rect x="80" y="220" width="35" height="40" rx="6" fill="url(#grad-accent)" filter="url(#shadow)"/>
+                    <ellipse cx="97.5" cy="220" rx="18" ry="6" fill="#c73a1a"/>
+                    <path d="M 100 230 Q 120 235 125 245" stroke="url(#grad-accent)" stroke-width="3" fill="none" stroke-linecap="round"/>
+                    
+                    <!-- Floating elements -->
+                    <g opacity="0.8">
+                      <circle cx="400" cy="100" r="8" fill="url(#grad-primary)">
+                        <animate attributeName="cy" values="100;110;100" dur="3s" repeatCount="indefinite"/>
+                      </circle>
+                    </g>
+                    <g opacity="0.8">
+                      <circle cx="350" cy="350" r="6" fill="url(#grad-accent)">
+                        <animate attributeName="cy" values="350;340;350" dur="2.5s" repeatCount="indefinite"/>
+                      </circle>
+                    </g>
+                    <g opacity="0.8">
+                      <circle cx="420" cy="300" r="7" fill="url(#grad-light)">
+                        <animate attributeName="cy" values="300;315;300" dur="2.8s" repeatCount="indefinite"/>
+                      </circle>
+                    </g>
                   </svg>
                 </div>
               </div>
