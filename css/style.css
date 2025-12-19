@@ -1124,8 +1124,10 @@ body:after {
   display: flex;
   align-items: center;
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  position: relative;
+  position: static;
   overflow: hidden;
+  z-index: auto;
+  clear: both;
 }
 
 .hero-content {
@@ -1282,6 +1284,10 @@ body:after {
 /* Skills Section */
 .skills-section {
   background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+  position: static;
+  z-index: auto;
+  overflow: auto;
+  clear: both;
 }
 
 .skill-group {
@@ -1321,13 +1327,13 @@ body:after {
 .portfolio-section {
   background: white;
   padding: 80px 0 100px 0;
-  margin-top: 0;
-  margin-bottom: 80px;
-  position: relative;
-  z-index: 0;
-  overflow: visible;
+  margin: 0;
+  position: static;
+  z-index: auto;
+  overflow: auto;
   display: block;
   width: 100%;
+  clear: both;
 }
 
 #posts {
@@ -1449,6 +1455,10 @@ body:after {
 /* About Section */
 .about-section {
   background: white;
+  position: static;
+  z-index: auto;
+  overflow: auto;
+  clear: both;
 }
 
 .about-image {
@@ -1498,10 +1508,10 @@ body:after {
 .education-section {
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
   padding: 80px 0 80px 0;
-  margin-top: 60px;
-  margin-bottom: 80px;
-  position: relative;
-  z-index: 1;
+  margin: 0;
+  position: static;
+  z-index: auto;
+  overflow: auto;
   clear: both;
   display: block;
 }
@@ -1575,9 +1585,12 @@ body:after {
 .experience-section {
   background: linear-gradient(135deg, #ffffff 0%, #f5f7fa 100%);
   padding: 80px 0;
-  margin-top: 40px;
-  position: relative;
-  z-index: 2;
+  margin: 0;
+  position: static;
+  z-index: auto;
+  overflow: auto;
+  display: block;
+  clear: both;
 }
 
 .experience-card {
@@ -1731,6 +1744,10 @@ textarea.form-control {
 .hero-section {
   background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
   border-bottom: 1px solid #e2e8f0;
+  position: static;
+  z-index: auto;
+  overflow: auto;
+  clear: both;
 }
 
 .hero-content {
@@ -1838,6 +1855,10 @@ textarea.form-control {
 .about-section {
   background: #fff;
   padding: 80px 0;
+  position: static;
+  z-index: auto;
+  overflow: auto;
+  clear: both;
 }
 
 .about-image {
@@ -1893,6 +1914,10 @@ textarea.form-control {
 .skills-section {
   background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
   padding: 80px 0;
+  position: static;
+  z-index: auto;
+  overflow: auto;
+  clear: both;
 }
 
 .skill-group {
@@ -1956,13 +1981,13 @@ textarea.form-control {
 .portfolio-section {
   background: #fff;
   padding: 100px 0 100px 0;
-  margin-top: 0;
-  margin-bottom: 80px;
-  position: relative;
-  z-index: 0;
-  overflow: visible;
+  margin: 0;
+  position: static;
+  z-index: auto;
+  overflow: auto;
   display: block;
   width: 100%;
+  clear: both;
 }
 
 .portfolio-card {
@@ -2106,10 +2131,10 @@ textarea.form-control {
 .education-section {
   background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
   padding: 80px 0 80px 0;
-  margin-top: 60px;
-  margin-bottom: 80px;
-  position: relative;
-  z-index: 1;
+  margin: 0;
+  position: static;
+  z-index: auto;
+  overflow: auto;
   clear: both;
   display: block;
 }
@@ -2189,10 +2214,12 @@ textarea.form-control {
 .experience-section {
   background: #fff;
   padding: 80px 0;
-  margin-top: 60px;
-  margin-bottom: 80px;
-  position: relative;
-  z-index: 2;
+  margin: 0;
+  position: static;
+  z-index: auto;
+  overflow: auto;
+  display: block;
+  clear: both;
 }
 
 .experience-card {
