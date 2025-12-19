@@ -1327,6 +1327,19 @@ body:after {
   z-index: 1;
   overflow: visible;
   display: block;
+  width: 100%;
+}
+
+#posts {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+#posts > * {
+  flex-basis: auto;
 }
 
 .portfolio-card {
@@ -1335,9 +1348,10 @@ body:after {
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  height: 100%;
   display: flex;
   flex-direction: column;
+  height: auto;
+  min-height: auto;
 }
 
 .portfolio-card:hover {
@@ -1940,12 +1954,13 @@ textarea.form-control {
 .portfolio-section {
   background: #fff;
   padding: 100px 0 100px 0;
-  margin-top: 80px;
+  margin-top: 0;
   margin-bottom: 80px;
   position: relative;
   z-index: 1;
   overflow: visible;
   display: block;
+  width: 100%;
 }
 
 .portfolio-card {
@@ -1955,7 +1970,7 @@ textarea.form-control {
   box-shadow: 0 4px 15px rgba(99, 102, 241, 0.1);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #e2e8f0;
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
 }
