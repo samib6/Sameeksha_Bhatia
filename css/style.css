@@ -1322,6 +1322,9 @@ body:after {
   background: white;
   padding: 80px 0 100px 0;
   margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+  overflow: visible;
 }
 
 .portfolio-card {
@@ -1479,8 +1482,11 @@ body:after {
 .education-section {
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
   padding: 80px 0;
-  margin-top: 40px;
+  margin-top: 60px;
   margin-bottom: 60px;
+  position: relative;
+  z-index: 2;
+  clear: both;
 }
 
 .education-timeline {
@@ -2077,6 +2083,9 @@ textarea.form-control {
   padding: 80px 0;
   margin-top: 60px;
   margin-bottom: 80px;
+  position: relative;
+  z-index: 2;
+  clear: both;
 }
 
 .timeline-item {
