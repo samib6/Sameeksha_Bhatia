@@ -1214,6 +1214,10 @@ body:after {
   pointer-events: auto;
 }
 
+.social-link span {
+  pointer-events: none;
+}
+
 .social-link:hover {
   background: #0d3f31;
   transform: translateY(-4px);
@@ -2033,6 +2037,10 @@ textarea.form-control {
   z-index: 10;
   position: relative;
   pointer-events: auto;
+}
+
+.social-link span {
+  pointer-events: none;
 }
 
 .social-link:hover {
