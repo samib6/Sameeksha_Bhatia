@@ -1209,6 +1209,9 @@ body:after {
   cursor: pointer;
   border: none;
   padding: 0;
+  z-index: 10;
+  position: relative;
+  pointer-events: auto;
 }
 
 .social-link:hover {
@@ -2027,6 +2030,9 @@ textarea.form-control {
   text-decoration: none;
   cursor: pointer;
   padding: 0;
+  z-index: 10;
+  position: relative;
+  pointer-events: auto;
 }
 
 .social-link:hover {
