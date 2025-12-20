@@ -1205,6 +1205,10 @@ body:after {
   border-radius: 50%;
   transition: all 0.3s ease;
   font-size: 1.2rem;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  padding: 0;
 }
 
 .social-link:hover {
@@ -1431,7 +1435,6 @@ body:after {
   flex-direction: column;
 }
 
-.portfolio-badge {
 .portfolio-badge {
   display: inline-block;
   background: linear-gradient(135deg, #6366f1 0%, #3b82f6 100%);
@@ -2021,6 +2024,9 @@ textarea.form-control {
   font-size: 1.2rem;
   transition: all 0.3s ease;
   box-shadow: 0 2px 8px rgba(99, 102, 241, 0.1);
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0;
 }
 
 .social-link:hover {
